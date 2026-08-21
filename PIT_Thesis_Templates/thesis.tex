@@ -1,0 +1,69 @@
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
+% University of Kassel
+% FB 16 Electrical Engineering and Computer Science
+% Participatory IT Design (PIT)
+% Prof. Dr. Claude Draude
+
+% Thesis Template created by Lisa Marie Bläsing
+% Version 2.1, 2026-07
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
+
+\input{style/preamble}
+\input{style/listings}
+
+\begin{document}
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Frontmatter ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
+    \input{content/titlepage}
+    \thispagestyle{empty}
+    
+    \pagenumbering{roman}
+	\setcounter{page}{1}
+% Declaration %
+    \input{content/00-declaration}
+% Abstract %
+    \input{content/00-abstract}
+% Table of Contents (required) %
+    \tableofcontents
+% List of Figures (optional) % comment out the following commands if you have no need for it   
+    \clearpage
+    \listoffigures
+    \addcontentsline{toc}{chapter}{Abbildungsverzeichnis} % English: List of Figures
+% List of Tables (optional) %
+    \clearpage
+    \listoftables
+    \addcontentsline{toc}{chapter}{Tabellenverzeichnis} % English: List of Tables
+% List of Listings (optional) %
+    \clearpage
+    \lstlistoflistings
+    \addcontentsline{toc}{chapter}{Listing} % English: Listings
+% List of Acronyms (optional) %
+    \input{content/acronyms}
+    \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis} % English: Acronyms
+    
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Mainmatter ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
+    \clearpage
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    
+% Chapters %
+    \input{content/01-introduction}
+    \input{content/02-chapter2}
+    \input{content/03-conclusion}
+    
+%%%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Backmatter ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%%%
+
+% Bibliography %
+%% remove following: %%
+
+\nocite{*} % PLEASE REMOVE IN YOUR THESIS! (it prints all literature included in the .bib file so that the references section in this template is not empty since nothing has been cited)
+
+%% required: %%
+    \printbibliography[heading=bibintoc]
+    
+    \clearpage
+    \pagenumbering{Roman}
+    \setcounter{page}{1}
+    
+% Appendices (optional) % comment out if you have no need for it
+    \input{content/appendix}
+\end{document}

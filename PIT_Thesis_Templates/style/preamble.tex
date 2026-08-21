@@ -1,0 +1,45 @@
+%% Document Layout and Structure %%
+\documentclass[12pt,a4paper]{report}
+\usepackage[T1]{fontenc} 
+\usepackage[ngerman]{babel} % comment out if thesis written in English
+\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.0cm,bindingoffset=8mm,includehead,includefoot]{geometry} % check with the printing shop if more space for binding (bindingoffset) is needed
+
+\usepackage[onehalfspacing]{setspace} % spacing between lines
+\parindent 0pt % no indentation after paragraph
+
+\usepackage{titlesec} % for customization of chapters, sections and subsections
+\titleformat{\chapter}[display]
+  {\bfseries\filright}
+  {\hrule height 0pt \huge\thechapter\hrule}
+  {-\baselineskip}
+  {\Huge\strut}
+\titlespacing*{\chapter}
+  {0pt}
+  {-\topskip}
+  {2\normalbaselineskip}
+
+%% Colours %%
+\usepackage{xcolor} % colour management and manipulation, supports a large number of colour models
+
+%% Code Snippets %%
+\usepackage{listings} % useful for displaying code snippets etc.
+
+%% Hyperlinks %%
+\usepackage[hidelinks]{hyperref} % hidelinks removes borders around the hyperlinks
+
+%% Graphics %%
+\usepackage{graphicx} % to include graphics or images
+\usepackage{svg}
+
+%% Lorem Ipsum %% 
+\usepackage{lipsum} % to have filler text for this template
+
+%% Acronyms %%
+\usepackage[printonlyused,withpage]{acronym} % both options optional; for more features (e.g. acronyms & glossary) you can instead use the package glossaries (see e.g. https://de.overleaf.com/learn/latex/Glossaries)
+
+%% Bibliography & Citation %%
+% For the package biblatex a bibliography data file is needed; use \printbibliography at the end of the document to display the references cited in your thesis (thesis.tex)
+\usepackage[style=authoryear,citestyle=authoryear-icomp,uniquename=minfull,maxbibnames=99,maxcitenames=2]{biblatex} % you can change the options (e.g. style & citestyle)
+\addbibresource{bibliography.bib} % imports the bibliography data file
+
+\usepackage{csquotes} % for quotations

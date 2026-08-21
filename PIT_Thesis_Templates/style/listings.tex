@@ -1,0 +1,35 @@
+% This is an example - you can change the appearance of the code snippets depending on your personal preferences and the programming language(s) you are using in this thesis.
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{RGB}{248,248,255}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                
+    captionpos=b,                
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=6pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\lstdefinelanguage{myHTML}{
+    language=html,
+    sensitive=true,
+    alsoletter={<>=-},
+    comment=[s]{<!-}{-->},
+    tag=[s],
+    otherkeywords={<h1>,</h1>,<p>,</p>,<a,</a>,href,title}
+}
